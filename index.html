@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QandA</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" class="css">
+  <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+
+  <body>
+
+
+<div class="container">
+  <div class="head">
+    <div class="row">
+      <div class="com-lg-12">
+        <h1>Question's and Answers</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div id="nameDiv">
+          <input type="text" id="postersName" value="Name">
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div id="QuestionDiv">
+          <input type="text" id="postersQuestion" value="What's your question?">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <button id="postQuestion">Post Question</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row"></div>
+
+  <div class="row">
+    <div class="row">
+      <table class="table table-striped">
+        <thead>
+          <tr class ="tableRow">
+            <th class="col-xs-4">Name</th>
+            <th class="col-xs-4">Question</th>
+            <th class="col-xs-4">Answer</th>
+          </tr>
+        </thead>
+        <tbody class="tableBody">
+          <tr id="template" style="display:none;" >
+            <td class="name  col-xs-4" id="nameList"></td>
+            <td class="question col-xs-4" id = "numberList"></td>
+            <td class="answer col-xs-1">
+              <!-- button -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="pName"></h4>
+      </div>
+      <div class="pQuestion">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <div class="answer">
+          <input type="text" id="inputAnswer" placeholder="Type your answer">
+        </div><br>
+        <button type="button" class="submitAnswer" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.container{
+  background-color: lightblue;
+  font-family: times;
+  width: 100vw;
+}
+
+table {
+  width: vw;
+}
+
+#myModal{
+  background-color: lightblue;
+}
+button {
+  background-color: lightgreen;
+}
+table .button{
+  background-color: orange;
+}
+
+
+.table th {
+   text-align: center;
+}
+
+.table td {
+   text-align: center;
+}
+
+.table button {
+   background-color: orange;
+}
+div.head{
+  text-align: center;
+}
